@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <center><title>Ubicación del Hotel</title></center>
+    <link rel="stylesheet" href="hotel.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #db34b7, #f193e6);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .ubicacion-container {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+        .direccion {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .direccion i {
+            color: #007BFF;
+            font-size: 22px;
+        }
+        .ubicacion-link {
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .ubicacion-link:hover {
+            text-decoration: underline;
+        }
+        .mapa-container {
+            margin-top: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .opinion {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: white;
+            padding: 15px;
+            margin: 10px auto;
+            width: 70%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            color: #0e0d0d;
+        }
+        .opinion img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff06d5;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<header>
+    <h1>Ubicación del Hotel</h1>
+    <nav>
+        <a href="opiniones.html">Opiniones</a> |
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+<section class="ubicacion-container">
+    <h2>¿Dónde nos encontramos?</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/2439/2439209.png" alt="ubicacion",width="60" height="60">
+    <p>¡Visítanos y disfruta de una experiencia única!</p>
+    <div class="direccion">
+        <i class="fas fa-map-marker-alt"></i>
+        <p><strong>Dirección:</strong> Calle Reyes de España #645, Cancún, México – 
+            <a href="https://m.facebook.com/HOTEL-MOTEL-PUNTO-Y-1949823711979402/" class="ubicacion-link">Ubicación excelente - Ver mapa</a>
+        </p>
+    </div>
+    <div class="mapa-container">
+        <iframe 
+            src="https://www.booking.com/hotel/ae/the-royal-atlantis.es.html?label=gen173nr-1BCAsoAkISdGhlLXJveWFsLWF0bGFudGlzSFJYBGigAYgBAZgBCrgBF8gBDNgBAegBAYgCAagCA7gChenXvQbAAgHSAiQzNDY4MmM1OC1kNzU2LTQzOWItOWU2Zi0zN2ZlNWEyY2Q3MDHYAgXgAgE&sid=75f5adce0c25b6349349908afe0e21fd&dist=0&keep_landing=1&sb_price_type=total&type=total&#map_opened-map_trigger_header" 
+            width="100%" height="450" style="border:0;" 
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+<body>
+    <header>
+    <section>
+        <center><h2>Opiniones de nuestros huéspedes</h2></center>
+        <div class="opinion">
+            <img src="https://i.pinimg.com/474x/94/43/4a/94434aed23db30e3d2570af3e363be2f.jpg" alt="Foto de Santiago Sanchez">
+            <p><strong>Santiago Sanchez:</strong> "Excelente servicio y comodidad. 5 estrellas!"</p>
+        </div>
+        <div class="opinion">
+            <img src="https://i.pinimg.com/474x/64/df/bb/64dfbbc74143688d2e43b9fd0ac9e652.jpg" alt="Foto de Sandra Lopez">
+            <p><strong>Sandra Lopez:</strong> "Muy buena ubicación y trato amable. Volveré!"</p>
+        </div>
+        <div class="opinion">
+            <img src="https://i.pinimg.com/474x/df/88/84/df88844a67b45907d4df821288b26b45.jpg" alt="Foto de Emilia Villa">
+            <p><strong>Emilia Villa:</strong> “¡Hotel 10/10!. Su exclusividad, su seguridad, su comodidad, su comida, su instalación y lo más bonito."</p>
+        </div>
+        <div class="opinion">
+            <img src="https://i.pinimg.com/474x/71/52/d3/7152d3a71bf1fee6e7032179e4e7d7d6.jpg" alt="Foto de Ximena Piedras">
+            <p><strong>Ximena Piedras:</strong> “¡Hotel 1000/10!. La vista es muy muy bonita."</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Hotel Mali bb. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
